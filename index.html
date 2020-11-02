@@ -1,0 +1,133 @@
+<html>
+<head>
+<link rel="stylesheet" href="estilos.css">
+<script src="script.js"	></script>
+</head>
+
+
+<nav id="menu" align="center">
+<ul >
+<li id="c1"><a href="#h1"><font  color=olive size="+1">Hombres</font></a></li>
+<li id="c2"><a href="#h2"><font  color=olive size="+1">Acesorios</font></a></li>
+<li id="c3"><a href="#h3"><font  color=olive size="+1">Videos</font></a></li>
+<li id="c4"><a href="#h4"><font  color=olive size="+1">Pedidos</font></a></li>
+ </ul>
+</nav>
+<body bgcolor="#517B8B">
+<div id="logo">
+ <figure><br><br><br><br><br><br>
+  <img src="Imagenes/logo.jpg" width=150 height=150 align="left">
+ </figure>
+<h1><left><font face="arial" color=#00FFFF size=+6 ><br>
+AXEL
+
+</left>
+</h1>
+</div>
+<div class="slider">
+<ul>
+<li><img src="Imagenes/Outfits.jpg"></li>
+<li><img src="Imagenes/ternos.jpg"></li>
+<li><img src="Imagenes/modelo.jpg"></li>
+<li><img src="Imagenes/lentes.jpg"></li>
+</ul>
+</div>
+<section id="llamar" align="center">
+<font face="Garamont" color=#FFFFFF size=+6 >
+Hombres 
+</section>
+
+<figure align="center" id="h1">
+<img src="Imagenes/imagenes hombres/poleras.jpg" >
+<img src="Imagenes/imagenes hombres/terno.jpg" >
+<header id="precio"  align="center">
+<font face="arial" color=#000000 size="+3"  > Precio S/150
+</header >
+</figure>
+
+<section id="llamar" align="center">
+<font face="Garamont" color=#FFFFFF size=+6 >
+Acesorios 
+</section>
+<figure align="center" id="h2">
+<img src="Imagenes/accsesorios/accesorios1.jpeg" >
+<img src="Imagenes/accsesorios/relojes.jpg" >
+<img src="Imagenes/accsesorios/caja.jpg" >
+<img src="Imagenes/accsesorios/lentes.png" >
+
+<header id="precio"  align="center">
+<font face="arial" color=#000000 size="+3"  > Precio S/80
+</header >
+</figure>
+
+
+<section id="llamar" align="center">
+<font face="Garamont" color=#FFFFFF size=+6 >
+Videos 
+</section><br>
+<section align="center" id="h3">
+<video id="video1" src="Imagenes/videos/y2mate.com - moda_2018_hombre_todas_las_tendencias_en_ropa_de_hombre_SWYT7Cl-ZRk_360p.mp4" controls width=”320” height=”240”  ></video>
+</section><br>
+	<div>
+		<button id="playpause" onClick="playpause()">Reproducir</button>
+		<button id="rebobinar" onClick="rebobinar()">rebobinar</button>
+        <button id="adel" onClick="adel(10)">adelantar 10 s</button>
+        <button id="adel" onClick="adel(-10)">adelantar -10 s</button>
+	</div>
+	<script>
+		var miVideo=document.getElementById("video1")
+			function playpause(){
+			if(miVideo.paused){
+				miVideo.play()
+			}
+			else{
+			miVideo.pause();
+	}
+			}
+	function rebobinar(){
+		miVideo.pause();
+		miVideo.currentTime=0;
+	}
+	function adel(value){
+		miVideo.currentTime+=value;
+	}
+
+</script>
+
+<section id="llamar" align="center">
+<font face="Garamont" color=#FFFFFF size=+6 >
+Audio 
+</section><br>
+<section align="center" id="h4">
+<audio  align="center" src="Imagenes/audio/y2mate.com - aprende_a_vestirte_como_todo_un_caballero_8mcjzxJlliw_144p.mp4" controls></audio>
+</section><br>
+<div id="111">
+	<section id="cajasoltar">
+Arrastre y suelte la imagen aquí
+</section>
+<section id="cajaimagenes">
+<img id="imagen" src="Imagenes/monsterl1.gif">
+</section>
+	</div>
+<section id="llamar" align="center">
+<font face="Garamont" color=#FFFFFF size=+6 >
+Pedidos
+</section>
+<header>
+<font face="Garamont" color=#000000 size=+5 >Me puedes contactar:
+</hgroup>
+</header>
+<p align="center" >
+Telf:998835471<br>
+Fijo:247431<br>
+Email:m055@upla.edu.pe
+</p>
+</figure>
+<section id="ubicacion">
+	<button id="obtener">Obtener mi Ubicación</button>
+</section
+
+
+</body>
+</html>
+
